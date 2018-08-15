@@ -438,6 +438,9 @@ static const CGFloat kLabelsFontSize = 12.0f;
         }
         else {
             self.selectedMinimum = self.selectedMaximum;
+            self.rightHandleSelected = YES;
+            self.leftHandleSelected = NO;
+            [self refresh];
         }
 
     }
@@ -448,6 +451,9 @@ static const CGFloat kLabelsFontSize = 12.0f;
         }
         else {
             self.selectedMaximum = self.selectedMinimum;
+            self.leftHandleSelected = YES;
+            self.rightHandleSelected = NO;
+            [self refresh];
         }
     }
 
